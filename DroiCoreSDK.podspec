@@ -10,10 +10,9 @@ Pod::Spec.new do |s|
   s.author             = { "Jerry Chan" => "jerry.chan@droi.com.tw" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/DroiCloud/DroiBaaS-SDK-iOS.git", :tag => s.version.to_s }  
-  s.vendored_frameworks = "**/DroiCoreSDK.framework"
+  s.vendored_frameworks = "DroiCoreSDK.framework"
   s.frameworks = "CFNetwork"
   s.libraries = "z", "sqlite3", "objc"
-  s.preserve_paths = "**/scripts/*", "**/sources/*"
   s.requires_arc = true   
 end
 
