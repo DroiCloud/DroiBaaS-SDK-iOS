@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "**/DroiCoreSDK.framework"
   s.frameworks = "CFNetwork"
   s.libraries = "z", "sqlite3", "objc"
-  s.preserve_paths = "*/scripts/*", "*/sources/*"
+  s.preserve_paths = "scripts/*", "sources/*"
   s.requires_arc = true   
 end
