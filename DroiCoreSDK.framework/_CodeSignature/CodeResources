@@ -4,65 +4,77 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/Core.h</key>
-		<data>
-		msUoF/MNPpCT2ylyJFszJAiOyyA=
-		</data>
 		<key>Headers/DroiCloud.h</key>
 		<data>
-		HFP0H2eTmo+KBnfEnQspEJDOEsA=
+		f2MiICCWpnAZXyuAegyzbT1lDUs=
+		</data>
+		<key>Headers/DroiCloudCache.h</key>
+		<data>
+		sNvG+OW2g5LYINIA7nS2OARhEtA=
 		</data>
 		<key>Headers/DroiCondition.h</key>
 		<data>
-		IITQ5J06H2ZVkp4vly00LMDzogg=
+		jBoSE8+bgS+6tH2dfb6LOYWSczc=
+		</data>
+		<key>Headers/DroiCore.h</key>
+		<data>
+		sUk03KVuGSCDDim0hKwlo5xxgpA=
 		</data>
 		<key>Headers/DroiCoreSDK.h</key>
 		<data>
-		yN1TLekcXJa9YFGdNVcRN+5eHjs=
+		1ESusX1B+mBUmXz3iScH6IIZYBQ=
 		</data>
 		<key>Headers/DroiError.h</key>
 		<data>
-		Or1IB3Y5x4k3382X/qlTAu6vOvA=
+		t8tG4Do8mnrq5CRGRX+tzR5AnT8=
 		</data>
 		<key>Headers/DroiFile.h</key>
 		<data>
-		UqilzBUDUR454OvxqqVTBH/oqbw=
+		vX5wUzUNVnieAvFPvavV3GrHBl8=
 		</data>
 		<key>Headers/DroiGroup.h</key>
 		<data>
-		pgH+43sP4Z2K7CEn5803uoFggjw=
+		h1tMgAEORnRntevTM7lO9Y+0KPI=
 		</data>
 		<key>Headers/DroiGroupRelation.h</key>
 		<data>
-		2Bqj3oIuLCdUIl87SJ0MLKYfUIo=
+		FMFr5t7oehnsV78cdc/m95TGMto=
 		</data>
 		<key>Headers/DroiObject.h</key>
 		<data>
-		a95XtV6pk5KX9hJwnAYQ8Y4R/YM=
+		s1/EpruJp5B7YUvZdTv2vKNpDVE=
 		</data>
 		<key>Headers/DroiPermission.h</key>
 		<data>
-		rAAgkA1xCNmvcEDgrEUtM/JJTUU=
+		VevAquVCQIY43PpVtZGHwGPke64=
+		</data>
+		<key>Headers/DroiPreference.h</key>
+		<data>
+		kZvJkE0xVgCtD2CSkcEpx4Fvhcw=
 		</data>
 		<key>Headers/DroiQuery.h</key>
 		<data>
-		rZ4kBLbyOFMHnPtNXHMsuh3eG8g=
+		EgFIWWnOlqq+w72Y3g/MR+sOUrQ=
+		</data>
+		<key>Headers/DroiReferenceObject.h</key>
+		<data>
+		qBLxzPy5ZszW7Gp2QccwpNQvQsw=
 		</data>
 		<key>Headers/DroiTask.h</key>
 		<data>
-		0Li35CBD0b0QqBqGp9ursIYbIMI=
+		pfLOiFuVqjabHv2tsAem0B8k4jE=
+		</data>
+		<key>Headers/DroiTaskDispatcher.h</key>
+		<data>
+		p9k3KP2KkXcu9zPzZA2UOXFEsKA=
 		</data>
 		<key>Headers/DroiUser.h</key>
 		<data>
-		NCgsmGl7d2kcQrWa+iBQmo+eky8=
-		</data>
-		<key>Headers/TaskDispatcher.h</key>
-		<data>
-		51muduZjQfju8TBQ2tN3DIBNYJQ=
+		3xF7SZIT1+2oF6QrxRVAs9ZzBXI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yzUd5RSkmiOfExrfok5yMHBhW+g=
+		j3NDeBkRzKwnoLAxRucZ5NHeoHc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,158 +83,191 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/Core.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			msUoF/MNPpCT2ylyJFszJAiOyyA=
-			</data>
-			<key>hash2</key>
-			<data>
-			hDDnxG5dKSDxgM8cmElFS7Opfux1yhn8q8nIS/HUlZk=
-			</data>
-		</dict>
 		<key>Headers/DroiCloud.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HFP0H2eTmo+KBnfEnQspEJDOEsA=
+			f2MiICCWpnAZXyuAegyzbT1lDUs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gpc3XrQtynK90hwz5dO9UglHJFqeC3BM0HtpL7ePaI4=
+			Dvh1QZV8Ri+/EHaipI3s6I2HhHYRBHEQmZz0A8LyIzc=
+			</data>
+		</dict>
+		<key>Headers/DroiCloudCache.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sNvG+OW2g5LYINIA7nS2OARhEtA=
+			</data>
+			<key>hash2</key>
+			<data>
+			b2m5W7EjLssX8RU2HNGB3mLJtn9n8GWX35yzLPHSYDM=
 			</data>
 		</dict>
 		<key>Headers/DroiCondition.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IITQ5J06H2ZVkp4vly00LMDzogg=
+			jBoSE8+bgS+6tH2dfb6LOYWSczc=
 			</data>
 			<key>hash2</key>
 			<data>
-			CVK1vJ+F44sX7QpNEboKkPallH50bDqg4PzjfOrsE+4=
+			MxKQF+ecMpZa7Yn2SGcXgCMh1R6x4xNQ1qqJhiKmcaA=
+			</data>
+		</dict>
+		<key>Headers/DroiCore.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sUk03KVuGSCDDim0hKwlo5xxgpA=
+			</data>
+			<key>hash2</key>
+			<data>
+			4zoFd/EL0em4F9ztDZ23Csa+K1H/yCHpiJNwB+slj8g=
 			</data>
 		</dict>
 		<key>Headers/DroiCoreSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yN1TLekcXJa9YFGdNVcRN+5eHjs=
+			1ESusX1B+mBUmXz3iScH6IIZYBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			AG2CxpKR9W9MzjQ9bD2toHvhlHkcLCpuOBmkYLwnzx8=
+			TZIrHCcojHTHAwIjGtpPTTLnOlzeS2mebEQtW9bSihY=
 			</data>
 		</dict>
 		<key>Headers/DroiError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Or1IB3Y5x4k3382X/qlTAu6vOvA=
+			t8tG4Do8mnrq5CRGRX+tzR5AnT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0qzxIkvqLLX31hopa2qbRdZeWA3zhRmstFs/qXUpbeU=
+			/SzlVU03IGA9eoXzgAJ8D1U8Xc+jdt+S6wwplq/tSmI=
 			</data>
 		</dict>
 		<key>Headers/DroiFile.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UqilzBUDUR454OvxqqVTBH/oqbw=
+			vX5wUzUNVnieAvFPvavV3GrHBl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yye+2CmAJEMDHKj/dhgQ7BZoM/dXQ8B5BHAqmCFdh+A=
+			c/o3HOm7JM99TPmuUTM1A8T1vIBq1ycHNpLUYF/AeSY=
 			</data>
 		</dict>
 		<key>Headers/DroiGroup.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pgH+43sP4Z2K7CEn5803uoFggjw=
+			h1tMgAEORnRntevTM7lO9Y+0KPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			jRFGNLXezNZnZHQPtt6tUU7NUMWzhGVjyW6+pzkiEfU=
+			tqeKWRAWAXNiPI8m5o0w21GiUnDaaVVzZxKIGeaMSSg=
 			</data>
 		</dict>
 		<key>Headers/DroiGroupRelation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Bqj3oIuLCdUIl87SJ0MLKYfUIo=
+			FMFr5t7oehnsV78cdc/m95TGMto=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jyvqn1/u/Y1paLSwcy2YrUco4ntHZoMIxpkuehP1H0o=
+			sX64IaRIQS5O2PzmAlCuJdcVVYrsJtdIFUqulL0lA8Y=
 			</data>
 		</dict>
 		<key>Headers/DroiObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a95XtV6pk5KX9hJwnAYQ8Y4R/YM=
+			s1/EpruJp5B7YUvZdTv2vKNpDVE=
 			</data>
 			<key>hash2</key>
 			<data>
-			68oygi/v29Zn8GGPqVhqmmfcEEvjLrWXjlbJWRDuZ1c=
+			40rKGi1A6vtKNgA9skAqB7O0smWTorbr918800M+xOc=
 			</data>
 		</dict>
 		<key>Headers/DroiPermission.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rAAgkA1xCNmvcEDgrEUtM/JJTUU=
+			VevAquVCQIY43PpVtZGHwGPke64=
 			</data>
 			<key>hash2</key>
 			<data>
-			RSQcxNB6f1g1al1FGViD8kvEq0owhdr82RqszdY8WCE=
+			nyOflTFNyjydFrQZLV60NvaATcCAZzJfqM9nklg3MH4=
+			</data>
+		</dict>
+		<key>Headers/DroiPreference.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kZvJkE0xVgCtD2CSkcEpx4Fvhcw=
+			</data>
+			<key>hash2</key>
+			<data>
+			ujbpQhyDF/swUhwRG8jOIIPRIZeN6ltPF9uAVCNpX9E=
 			</data>
 		</dict>
 		<key>Headers/DroiQuery.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rZ4kBLbyOFMHnPtNXHMsuh3eG8g=
+			EgFIWWnOlqq+w72Y3g/MR+sOUrQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZiJb1RIksPhnLdi2Chpz5C74bJgH/IG8qmKO13krMO0=
+			fan/DahMKn8Hb3iRnVzNEsKdNuEdEiZGgM1NySHn8yA=
+			</data>
+		</dict>
+		<key>Headers/DroiReferenceObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qBLxzPy5ZszW7Gp2QccwpNQvQsw=
+			</data>
+			<key>hash2</key>
+			<data>
+			5TXxTZqx5yKuVCF26eSzi6EBuqxFuTXa18S1A4j+hps=
 			</data>
 		</dict>
 		<key>Headers/DroiTask.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Li35CBD0b0QqBqGp9ursIYbIMI=
+			pfLOiFuVqjabHv2tsAem0B8k4jE=
 			</data>
 			<key>hash2</key>
 			<data>
-			RdYcsuoAlJL/Fzmu6holxTnD5AaMoDqu8MqP5YEt5as=
+			0fugXt6kpAkEqSQAbLpvProzMaoBaJFk21TSP+8jGD4=
+			</data>
+		</dict>
+		<key>Headers/DroiTaskDispatcher.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p9k3KP2KkXcu9zPzZA2UOXFEsKA=
+			</data>
+			<key>hash2</key>
+			<data>
+			fofRzvzreXOD63bHEowA6w/yTwEHKScuE04bLD6EV34=
 			</data>
 		</dict>
 		<key>Headers/DroiUser.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NCgsmGl7d2kcQrWa+iBQmo+eky8=
+			3xF7SZIT1+2oF6QrxRVAs9ZzBXI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rdShI++JtXvx+fKxVrF1igQnn6ODfAHjuBjlfX5xFJA=
-			</data>
-		</dict>
-		<key>Headers/TaskDispatcher.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			51muduZjQfju8TBQ2tN3DIBNYJQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			VDW9HL7zVRXGmHVVEN00ZEMPDVzeIQhR//XtiGkCG/w=
+			bZiPx1b64bE/MB0IPqYuXrEjY2MSLJPngCuW7r3srXM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

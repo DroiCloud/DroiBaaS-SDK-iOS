@@ -4,7 +4,7 @@
  */
 #import "DroiObject.h"
 
-DroiClassName(@"_D_ROi_Group")
+DroiObjectName(@"_D_ROi_Group")
 @interface DroiGroup : DroiObject
 
 DroiExpose
@@ -17,6 +17,15 @@ DroiExpose
  *  The users and sub groups will not default fetched after queried. Must call @ref fetch to retrieve users and sub groups
  */
 @property BOOL isReady;
+
+/**
+ *  Create instance with name
+ *
+ *  @param name Name
+ *
+ *  @return DroiGroup instance
+ */
++ (instancetype) groupWithName:(NSString*) name;
 
 #pragma mark - Constructor
 - (id) initWithName : (NSString*) name;

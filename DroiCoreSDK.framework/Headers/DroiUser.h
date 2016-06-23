@@ -4,16 +4,10 @@
  */
 
 #import "DroiObject.h"
+#import "DroiError.h"
 @import UIKit;
 
-typedef NS_ENUM(int, SignUpState) {
-    SIGNUP_OK = 0,
-    SIGNUP_FAIL = -1,
-    SIGNUP_FAIL_ALREADY_LOGIN = -2,
-    SIGNUP_FAIL_ALREADY_EXISTS = -3
-};
-
-typedef void(^DroiSignUpCallback)(SignUpState state);
+typedef void(^DroiSignUpCallback)(BOOL result, DroiError* error);
 
 @class UIView;
 @protocol IOAuthProvider <NSObject>
@@ -24,7 +18,7 @@ typedef void(^DroiSignUpCallback)(SignUpState state);
 - (NSString*) OAuthProviderName;
 @end
 
-DroiClassName(@"_User")
+DroiObjectName(@"_User")
 @interface DroiUser : DroiObject
 
 DroiExpose
@@ -36,32 +30,35 @@ DroiExpose
 DroiExpose
 @property NSString* Email;
 
+#pragma mark - Properties
+
+@property (readonly, getter=getSessionToken) NSString* sessionToken;
+
 #pragma mark - Static Methods
 + (instancetype) getCurrentUser;
-+ (instancetype) getCurrentUserByUserClass:(Class) userClazz;
++ (id) getCurrentUserByUserClass:(Class) userClazz;
 
-+ (instancetype) login: (NSString*) userId password:(NSString*) password;
-+ (instancetype) loginByUserClass : (NSString*) userId password:(NSString*) password userClass:(Class) userClazz;
++ (instancetype) login: (NSString*) userId password:(NSString*) password error:(DroiError**) error;
++ (id) loginByUserClass : (NSString*) userId password:(NSString*) password userClass:(Class) userClazz error:(DroiError**) error;
 
 // TODO: OAuth
-+ (instancetype) loginWithOAuth : (UIView*) view oauth:(id<IOAuthProvider>) provider;
-+ (instancetype) loginWithAnonymous;
++ (instancetype) loginWithOAuth : (UIView*) view oauth:(id<IOAuthProvider>) provider error:(DroiError**) error;
++ (instancetype) loginWithAnonymous:(DroiError**) error;
 
 #pragma mark - Login/Logout
-- (SignUpState) signUp;
+- (DroiError*) signUp;
 - (NSString*) signUpInBackground:(DroiSignUpCallback) callback;
 - (void) cancelBackgroundTask : (NSString*) taskId;
-- (void) logout;
+- (DroiError*) logout;
 
 #pragma mark - Save methods
-- (BOOL) save;
+- (DroiError*) save;
 - (NSString*) saveInBackground:(DroiObjectCallback)callback;
 - (void) saveEventually;
 
 #pragma mark - Status
 + (BOOL) autoAnonymousUser;
 + (void) setAutoAnonymousUser:(BOOL) autoAnonymousUser;
-- (NSString*) getSessionToken;
 - (BOOL) isEmailVerified;
 - (BOOL) isAuthorized;
 - (BOOL) isAnonymous;

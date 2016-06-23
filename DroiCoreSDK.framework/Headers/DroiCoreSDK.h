@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 #import <UIKit/UIKit.h>
-#import "Core.h"
+#import "DroiCore.h"
 #import "DroiObject.h"
 #import "DroiCondition.h"
 #import "DroiUser.h"
@@ -11,11 +11,14 @@
 #import "DroiQuery.h"
 #import "DroiFile.h"
 #import "DroiTask.h"
-#import "TaskDispatcher.h"
+#import "DroiTaskDispatcher.h"
 #import "DroiPermission.h"
 #import "DroiGroup.h"
 #import "DroiGroupRelation.h"
 #import "DroiCloud.h"
+#import "DroiPreference.h"
+#import "DroiReferenceObject.h"
+#import "DroiCloudCache.h"
 
 //! Project version number for DroiCoreSDK.
 FOUNDATION_EXPORT double DroiCoreSDKVersionNumber;

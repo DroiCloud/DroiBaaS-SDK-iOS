@@ -5,7 +5,7 @@
 
 #import "DroiObject.h"
 
-DroiClassName(@"_D_ROi_Group_User_Relation")
+DroiObjectName(@"_D_ROi_Group_User_Relation")
 @interface DroiGroupRelation : DroiObject
 DroiExpose
 @property NSString* MemberUserId;

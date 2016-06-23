@@ -5,6 +5,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "DroiError.h"
 
 #ifndef DroiExpose
 #define DroiExpose
@@ -14,38 +15,44 @@
 #define DroiReference
 #endif
 
-#ifndef DroiClassName
-#define DroiClassName(className)
+#ifndef DroiObjectName
+#define DroiObjectName(className)
 #endif
 
-@class DroiError;
 @class DroiPermission;
 
 /**
  *  Callback method for background task
  *
  *  @param result YES if succeeded
+ *  @param error DroiError object
  */
-typedef void(^DroiObjectCallback)(BOOL result);
+typedef void(^DroiObjectCallback)(BOOL result, DroiError* error);
 
+/**
+ * The DroiObject is the basic data type that can be saved and retrieved from the droi cloud service.
+ */
 @interface DroiObject : NSObject
 
 #pragma mark - Storage
-@property BOOL localStorage;
+/**
+ *  Determine whether this DroiObject is from/to localStorage. Default value is NO (Cloud)
+ */
+@property (getter=getLocalStorage, setter=setLocalStorage:) BOOL localStorage;
 
 /**
  *  Save this object to storage.
  *
- *  @return YES if saving successfully or NO otherwise
+ *  @return DroiError DroiError object. Developer should use isOk to check whether this result is OK.
  */
-- (BOOL) save;
+- (DroiError*) save;
 
 /**
  *  Delete this object from storage.
  *
- *  @return YES if deleting successfully or NO otherwise.
+ *  @return DroiError DroiError object. Developer should use isOk to check whether this result is OK.
  */
-- (BOOL) delete;
+- (DroiError*) delete;
 
 /**
  *  Save this object to storage by a background thread.
@@ -64,6 +71,10 @@ typedef void(^DroiObjectCallback)(BOOL result);
  *  @return taskId for calling the task.
  */
 - (NSString*) deleteInBackground : (DroiObjectCallback) callback;
+
+/**
+ *  Save this object eventually. This feature is only for cloud storage and would be sent to cloud if there is data connection available
+ */
 - (void) saveEventually;
 
 /**
@@ -71,9 +82,9 @@ typedef void(^DroiObjectCallback)(BOOL result);
  *
  *  @param items A collection of DroiObject.
  *
- *  @return YES if saving successfully or NO otherwise
+ *  @return DroiError DroiError object. Developer should use isOk to check whether this result is OK.
  */
-+ (BOOL) saveAll : (NSArray*) items;
++ (DroiError*) saveAll : (NSArray*) items;
 
 /**
  *  Help to save a list of DroiObject to storage by using a background thread.
@@ -90,9 +101,9 @@ typedef void(^DroiObjectCallback)(BOOL result);
  *
  *  @param items A collection of DroiObject
  *
- *  @return YES if saving successfully or NO otherwise
+ *  @return DroiError DroiError object. Developer should use isOk to check whether this result is OK.
  */
-+ (BOOL) deleteAll : (NSArray*) items;
++ (DroiError*) deleteAll : (NSArray*) items;
 
 /**
  *  Help to save a list of DroiObject to storage by using a background thread.
@@ -112,6 +123,9 @@ typedef void(^DroiObjectCallback)(BOOL result);
 + (void) cancelBackgroundTask : (NSString*) taskId;
 
 #pragma mark - Permission
+/**
+ *  The data permission (DroiPermission) for DroiObject
+ */
 @property DroiPermission* permission;
 
 #pragma mark - Dirty Flags
