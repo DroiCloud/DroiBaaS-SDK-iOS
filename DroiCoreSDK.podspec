@@ -1,10 +1,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "DroiCoreSDK"
-  s.version      = "0.5.1366"
+  s.version      = "0.5.1367"
   s.summary      = "This CoreSDK is one part of DroiBaaS for iOS"
   s.homepage     = "https://github.com/DroiCloud/DroiBaaS-SDK-iOS"
-  s.documentation_url = "https://github.com/DroiCloud/DroiBaaS-SDK-iOS"
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
 
   s.author             = { "Jerry Chan" => "jerry.chan@droi.com.tw" }
