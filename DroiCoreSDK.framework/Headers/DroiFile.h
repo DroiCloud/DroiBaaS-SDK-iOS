@@ -227,6 +227,8 @@ DroiObjectName(@"_File")
  */
 - (NSString*) updateDataInBackground:(NSData*) data name:(NSString*) name mimeType:(NSString*) mimeType callback:(DroiObjectCallback) callback;
 
+@property BOOL isContentDirty;
+
 -(instancetype) init __attribute__((unavailable("init not available")));
 
 @end

@@ -25,10 +25,13 @@ DroiExpose
 @property NSString* UserId;
 
 DroiExpose
-@property NSString* Password;
+@property (getter=getPassword, setter=setPassword:) NSString* Password;
 
 DroiExpose
 @property NSString* Email;
+
+DroiExpose
+@property BOOL Enabled;
 
 #pragma mark - Properties
 
@@ -42,6 +45,7 @@ DroiExpose
 + (id) loginByUserClass : (NSString*) userId password:(NSString*) password userClass:(Class) userClazz error:(DroiError**) error;
 
 // TODO: OAuth
++ (instancetype) loginWithOAuth : (UIView*) view oauth:(id<IOAuthProvider>) provider userClass:(Class) userClazz error:(DroiError**) error;
 + (instancetype) loginWithOAuth : (UIView*) view oauth:(id<IOAuthProvider>) provider error:(DroiError**) error;
 + (instancetype) loginWithAnonymous:(DroiError**) error;
 
