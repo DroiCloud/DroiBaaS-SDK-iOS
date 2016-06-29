@@ -249,52 +249,6 @@ typedef void(^DroiObjectCallback)(BOOL result, DroiError* error);
  */
 - (double) getDouble:(NSString*) key;
 
-#pragma Serialization/Deserialization
-/**
- *  Serialize object to json string
- *
- *  @return return NSString json string
- */
-- (NSString*) toJson;
-
-/**
- *  Deserialized DroiObject from Json data
- *
- *  @param jsonString The Json data being deserialized
- *
- *  @return The deserialized DroiObject object
- */
-+ (id) fromJson:(NSString*) jsonString;
-
-/**
- *  Deserialized DroiObject from Json data
- *
- *  @param json The Json data being deserialized
- *
- *  @return The deserialized DroiObject object
- */
-+ (id) fromJsonWithDictionary:(NSDictionary*) json;
-
-/**
- *  Deserialize object of the specified type clazz from Json data which is a subclass of DroiObject
- *
- *  @param jsonString The Json data being deserialized
- *  @param clazz      The type of the Object to deserialize to
- *
- *  @return A deserialized object of the specified type clazz
- */
-+ (id) fromJson:(NSString*) jsonString andClass:(Class) clazz;
-
-/**
- *  Deserialize object of the specified type clazz from Json data (NSDictionary) which is a subclass of DroiObject
- *
- *  @param json  The Json data being deserialized
- *  @param clazz The type of the Object to deserialize to
- *
- *  @return A deserialized object of the specified type clazz
- */
-+ (id) fromJsonWithDictionary:(NSDictionary*) json andClass:(Class) clazz;
-
 #pragma mark - Creation
 /**
  *  Create a new {@code DroiObject} with specified class name.

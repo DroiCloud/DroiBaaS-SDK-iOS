@@ -26,6 +26,13 @@ typedef void(^DroiGetFileCallback)(NSData* data, DroiError* error);
 typedef void(^DroiFileProgressCallback)(long current, long max);
 
 /**
+ *  getUrlInBackground callback.
+ *
+ *  @param url File url.
+ */
+typedef void(^DroiFileGetUrlCallback)(NSURL* url);
+
+/**
  *  Be able upload/download file to DroiCloud with DroiFile.
  */
 DroiObjectName(@"_File")
@@ -227,6 +234,24 @@ DroiObjectName(@"_File")
  */
 - (NSString*) updateDataInBackground:(NSData*) data name:(NSString*) name mimeType:(NSString*) mimeType callback:(DroiObjectCallback) callback;
 
+/**
+ *  Get file url.
+ *
+ *  @return URL
+ */
+- (NSURL*) getUrl;
+
+/**
+ *  Get file url in background thread.
+ *
+ *  @param callback url callback function.
+ *
+ *  @return false to fail to run in background thread.
+ */
+- (BOOL) getUrlInBackground:(DroiFileGetUrlCallback) callback;
+/**
+ *  Is the file content data modified.
+ */
 @property BOOL isContentDirty;
 
 -(instancetype) init __attribute__((unavailable("init not available")));
