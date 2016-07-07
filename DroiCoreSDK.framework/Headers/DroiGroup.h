@@ -4,7 +4,7 @@
  */
 #import "DroiObject.h"
 
-DroiObjectName(@"_D_ROi_Group")
+DroiObjectName(@"_Group")
 @interface DroiGroup : DroiObject
 
 DroiExpose

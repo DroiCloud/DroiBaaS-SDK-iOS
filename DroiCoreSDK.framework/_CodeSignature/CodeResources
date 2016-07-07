@@ -34,11 +34,11 @@
 		</data>
 		<key>Headers/DroiGroup.h</key>
 		<data>
-		h1tMgAEORnRntevTM7lO9Y+0KPI=
+		g1NH77qp7dADbf1peWqf+UF+NyI=
 		</data>
 		<key>Headers/DroiGroupRelation.h</key>
 		<data>
-		FMFr5t7oehnsV78cdc/m95TGMto=
+		s2Okl5Y8KoYlazb2y8rrZKMeBtA=
 		</data>
 		<key>Headers/DroiObject.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hO/S3xNP+SPDJsRfe5JCVulDNHk=
+		iUGlmuZmF9qbJMpeBflarhqbDoc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -164,22 +164,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h1tMgAEORnRntevTM7lO9Y+0KPI=
+			g1NH77qp7dADbf1peWqf+UF+NyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			tqeKWRAWAXNiPI8m5o0w21GiUnDaaVVzZxKIGeaMSSg=
+			C2WO4YyrNb4gpm5Oddhkr5LFKTG2wJzRmVJMoyJi9pY=
 			</data>
 		</dict>
 		<key>Headers/DroiGroupRelation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FMFr5t7oehnsV78cdc/m95TGMto=
+			s2Okl5Y8KoYlazb2y8rrZKMeBtA=
 			</data>
 			<key>hash2</key>
 			<data>
-			sX64IaRIQS5O2PzmAlCuJdcVVYrsJtdIFUqulL0lA8Y=
+			Z7KGWj6+JTSpTqXQis7jcQzvNQRLZgiJPcDXPhGpyYo=
 			</data>
 		</dict>
 		<key>Headers/DroiObject.h</key>
