@@ -269,6 +269,15 @@ typedef void(^DroiObjectCallback)(BOOL result, DroiError* error);
 + (id) createWithClass:(Class) clazz;
 
 /**
+ *  Register custom class for serialization/deserialization
+ *
+ *  @param clazz The target class
+ *
+ *  @return DroiError DroiError object. Developer should use isOk to check whether this result is OK.
+ */
++ (DroiError*) registerCustomClass:(Class) clazz;
+
+/**
  *  Get custom class by className
  *
  *  @param className The name of custom class

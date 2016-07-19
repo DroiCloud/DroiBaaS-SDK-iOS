@@ -141,4 +141,142 @@ FOUNDATION_EXPORT NSString* const DroiCondition_NOTIN;
  *  @return The DroiCondition object
  */
 + (instancetype) notSelectIn : (NSString*) arg1 withItems : (NSArray*) items;
+
+/**
+ *  Create DroiCondition object for LT (less than) operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) lt : (NSString*) arg1 andArg2 : (id) arg2;
+
+/**
+ *  Create DroiCondition object for 'less than or equal' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) ltOrEq : (NSString*) arg1 andArg2 : (id) arg2;
+
+/**
+ *  Create DroiCondition object for 'equal' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) eq : (NSString*) arg1 andArg2 : (id) arg2;
+
+/**
+ *  Create DroiCondition object for 'not equal' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) neq : (NSString*) arg1 andArg2 : (id) arg2;
+
+/**
+ *  Create DroiCondition object for 'greater than or equal' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) gtOrEq : (NSString*) arg1 andArg2 : (id) arg2;
+
+/**
+ *  Create DroiCondition object for 'greater' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) gt : (NSString*) arg1 andArg2 : (id) arg2;
+
+/**
+ *  Create DroiCondition object for 'is null' operator
+ *
+ *  @param arg1 The key of condition to check
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) isNull : (NSString*) arg1;
+
+/**
+ *  Create DroiCondition object for 'is not null' operator
+ *
+ *  @param arg1 The key of condition to check
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) isNotNull : (NSString*) arg1;
+
+/**
+ *  Create DroiCondition object for 'contains' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) contains : (NSString*) arg1 andArg2 : (NSString*) arg2;
+
+/**
+ *  Create DroiCondition object for 'not contains' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) notContains : (NSString*) arg1 andArg2 : (NSString*) arg2;
+
+/**
+ *  Create DroiCondition object for 'starts with' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) startsWith : (NSString*) arg1 andArg2 : (NSString*) arg2;
+
+/**
+ *  Create DroiCondition object for 'not starts with' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) notStartsWith : (NSString*) arg1 andArg2 : (NSString*) arg2;
+
+/**
+ *  Create DroiCondition object for 'ends with' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) endsWith : (NSString*) arg1 andArg2 : (NSString*) arg2;
+
+/**
+ *  Create DroiCondition object for 'not ends with' operator
+ *
+ *  @param arg1 The key of condition to check
+ *  @param arg2 The value is for checking
+ *
+ *  @return The DroiCondition object
+ */
++ (instancetype) notEndsWith : (NSString*) arg1 andArg2 : (NSString*) arg2;
 @end
