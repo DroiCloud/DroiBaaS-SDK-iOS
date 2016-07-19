@@ -8,11 +8,11 @@
 DroiObjectName(@"_Group_User_Relation")
 @interface DroiGroupRelation : DroiObject
 DroiExpose
-@property NSString* MemberUserId;
+@property NSString* MemberUserObjectId;
 
 DroiExpose
-@property NSString* MemberGroupId;
+@property NSString* MemberGroupObjectId;
 
 DroiExpose
-@property NSString* GroupId;
+@property NSString* GroupObjectId;
 @end
